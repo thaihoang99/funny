@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll</title>
+    <style>
+        #sayNo {
+            position: relative;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        var wW = window.innerWidth;
+        function runBtn(myBtn) {
+            var nL = Math.floor(Math.random() * wW);
+            myBtn.style.left = nL + "px";
+        }
+        function love() {
+            alert("LOVE YOU TOO!!!");
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>Do you love me???</p>
+        <button id="sayYes" onclick="love()">YES</button>
+        <button id="sayNo" onmouseover="runBtn(this);">NO</button>
+    </div>
+</body>
+
+</html>
